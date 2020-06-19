@@ -196,7 +196,7 @@
                 width: 300px;
             }
             
-            #article-summary img {
+            .clock {
                 
                 height:20px;
                 position: relative;
@@ -204,7 +204,7 @@
                 
             }
             
-            #article-summary a {
+            #topic-link {
                 
                 text-decoration: none;
                 color: #505050;
@@ -212,7 +212,7 @@
                 padding-left: 8px;
             }
             
-            #article-summary a:hover {
+            #topic-link:hover {
                 
                 color: #1380A1;
                 
@@ -228,7 +228,8 @@
                 
                 width: 600px;
                 float:left;
-                margin-left: 20px;
+                margin-left: 18px;
+                
                 
             }
             
@@ -239,7 +240,35 @@
                 font-weight: bold;
             }
             
+            .article-link:hover {
+                
+                color: #1380A1;
+                
+            }
+            
+            .article-side-image {
+                
+                float:left;
+                margin-left: 18px;
+                margin-bottom: 18px;
+                margin-right: 10px;
 
+                
+            }
+            
+            .side-article {
+                
+                float: left;
+                margin-top: 20px;
+                
+            }
+            
+            #side-article-summary {
+                
+                color: #5a5a5a;
+                font-size: 15px;
+                width: 500px;
+            }
         </style>   
          
     </head>
@@ -330,27 +359,27 @@
                 
                 <div id="menu-bar-2">
                 
-                    <a href="">Home</a>
+                    <a href="https://www.bbc.com/news">Home</a>
                     
-                    <a href="">Coronavirus</a>
+                    <a href="https://www.bbc.com/news/coronavirus">Coronavirus</a>
                     
-                    <a href="">Video</a>
+                    <a href="https://www.bbc.com/news/video_and_audio/headlines/53100590/coronavirus-return-to-lombardy-the-wuhan-of-the-west">Video</a>
                     
-                    <a href="">World</a>
+                    <a href="https://www.bbc.com/news/world">World</a>
                     
-                    <a href="">US & Canada</a>
+                    <a href="https://www.bbc.com/news/world/us_and_canada">US & Canada</a>
                     
-                    <a href="">UK</a>
+                    <a href="https://www.bbc.com/news/uk">UK</a>
                     
-                    <a href="">Business</a>
+                    <a href="https://www.bbc.com/news/business">Business</a>
                     
-                    <a href="">Tech</a>
+                    <a href="https://www.bbc.com/news/technology">Tech</a>
                     
-                    <a href="">Science</a>
+                    <a href="https://www.bbc.com/news/science_and_environment">Science</a>
                     
-                    <a href="">Stories</a>
+                    <a href="https://www.bbc.com/news/stories">Stories</a>
                     
-                    <a href="">Entertainment & Arts</a>
+                    <a href="https://www.bbc.com/news/entertainment_and_arts">Entertainment & Arts</a>
                     
                     <a href="" class="no-border">More</a>
                     
@@ -372,13 +401,15 @@
                 
                 <div id="article-container">
 
-                        <div id="title"><a href="">Tech takeovers feed into China Cold War fears</a></div>
+                        <div id="title"><a href="https://www.bbc.com/news/technology-53069699">Tech takeovers feed into China Cold War fears</a></div>
 
                         <div id="article-summary">
 
                             <p> The UK plans measures to restrict the sale of its technology companies - but is it acting too late?</p>
 
-                            <p><img src="images/clock.png"> 7h  <a id= "topic-link" href="">Technology</a> </p>
+                            <p><img class="clock" src="images/clock.png"> 7h  <a id= "topic-link" href="https://www.bbc.com/news/technology">Technology</a> </p>
+                            
+                            <p><a class="article-link" href="https://www.bbc.com/news/technology-53080113">• Eric Schmidt: Huawei engaged in unacceptable acts</a></p>
 
                         </div>
 
@@ -386,16 +417,41 @@
                 
             <img id="main-article-image"src="images/main-article-image.png">
                 
+            </div>
+            
             <div class="clear"></div>
+            
+            <div id="other-articles">
+                    
+                        <img class="article-side-image" src="images/article2.png">                        
+                        <p><a class="article-link" href="https://www.bbc.com/news/world-us-canada-53098439">Facebook removes Trump ad over 'Nazi hate symbol'</a></p>
+                        <div id="side-article-summary">
+                            <p> The tech giant says a campaign ad feautring a red triangle used in Nazi Germany violated its policy.</p>
+                            <p><img class ="clock" src="images/clock.png"> 10h <a id= "topic-link" href="https://www.bbc.com/news/world/us_and_canada">US & Canada</a> </p>
+                        </div>
+                    
+                    <div class="clear"></div>
+                        
+                        <img class="article-side-image" src="images/article3.png">                        
+                        <p><a class="article-link" href="https://www.bbc.com/news/technology-53095336">UK virus-tracing app switches to Apple-Google model</a></p>
+                        <div id="side-article-summary">
+                            <p>Government now intends to launch an app in the autumn but it may lack contact-tracing tech. </p>
+                            <p><img class ="clock" src="images/clock.png"> 13h <a id= "topic-link" href="https://www.bbc.com/news/technology">Technology</a> </p>
+                        </div>               
                 
-                <p><a class="topic-link" href="">Facebook removes Trump ad over 'Nazi hate symbol'</a></p>
-                <p><a class="article-link" href="">UK virus-tracing app switches to Apple-Google model</a></p>
-                <p><a class="article-link" href="">Australia targeted by 'state-based' cyber attacks</a></p>
+                    <div class="clear"></div>
+                
+                        <img class="article-side-image" src="images/article4.png">                        
+                        <p><a class="article-link" href="https://www.bbc.com/news/world-australia-46096768">Australia targeted by 'state-based' cyber attacks</a></p>
+                        <div id="side-article-summary">
+                            <p>The government and institutions are under threat from a "sophisticated" actor, PM Scott Morrison says.</p>
+                            <p><img class ="clock" src="images/clock.png"> 13h <a id= "topic-link" href="https://www.bbc.com/news/world/australia">Australia</a> </p>
+                        </div>             
                 
             </div>
-        
+            
         </div>
  
     </body>
-
+    
 </html>
